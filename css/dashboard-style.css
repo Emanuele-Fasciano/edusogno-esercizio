@@ -1,0 +1,135 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* REGISRATION FORM */
+
+/* header */
+header {
+    height: 130px;
+    display: flex;
+    align-items: center;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0px 10px 10px rgba(135, 175, 247, 0.7);
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    color: rgb(19, 64, 119);
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+h4{
+    color: green;
+}
+
+.success-message {
+    text-align: center;
+    color: green;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.logo img {
+    height: 60px;
+    margin-left: 5rem;
+}
+
+/* actions */
+.actions {
+    display: flex;
+    margin-top: 45px;
+    margin-bottom: 20px;
+}
+
+
+.action-btn a {
+    text-align: center;
+    background-color: rgb(0, 87, 255);
+    padding: 15px;
+    color: white;
+    border-radius: 15px;
+    font-size: 15px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+/* cards */
+.cards-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    width: 30%;
+    border: 2px solid rgb(19, 64, 119);
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.title {
+    font-size: 40px;
+}
+
+.date {
+    font-size: 25px;
+    font-weight: 300;
+    color: rgb(204, 204, 204);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    text-align: center;
+    border: none;
+    background-color: rgb(0, 87, 255);
+    padding: 10px;
+    color: white;
+    border-radius: 15px;
+    font-size: 25px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.delete-btn {
+    text-align: center;
+    border: none;
+    background-color: red;
+    padding: 10px 30px 10px 30px;
+    color: white;
+    border-radius: 15px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.update-btn a {
+    text-align: center;
+    border: none;
+    background-color: rgb(0, 87, 255);
+    padding: 10px 30px 10px 30px;
+    color: white;
+    border-radius: 15px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.options {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.link-button {
+    text-align: center;
+}

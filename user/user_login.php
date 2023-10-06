@@ -28,9 +28,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->execute();
     $result = $stmt->get_result();
 
+    // se non ci sono risultati 
     if ($result->num_rows == 0) {
         $error_message = "email o password errate, riprovare";
-    } elseif ($result->num_rows == 1) {
+    } elseif ($result->num_rows == 1) { // se c'è un riscontro nel database
         $row = $result->fetch_assoc();
         $storedPassword = $row["password"];
 
@@ -59,7 +60,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Edusogno-Login user</title>
+    <link rel="icon" type="image/png" href="../images/edusogno-favicon.png">
 
     <!-- link fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -106,6 +108,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </div>
 </body>
 
+<!-- script per mostrare la password scritta -->
 <script>
 const passwordInput = document.getElementById('password');
 const showPasswordBtn = document.getElementById('show-password');

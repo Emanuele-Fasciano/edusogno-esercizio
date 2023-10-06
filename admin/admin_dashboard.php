@@ -47,7 +47,8 @@ $conn->close();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Edusogno-Dashboard</title>
+    <link rel="icon" type="image/png" href="../images/edusogno-favicon.png">
     <!-- link css -->
     <link rel="stylesheet" href="../css/dashboard-style.css">
 
@@ -106,7 +107,7 @@ $conn->close();
                 }
             } else {
                 // stampo un messaggio se non ci sono eventi
-                echo "<h1>Nessun evento in programma<h1 />";
+                echo "<h1 class='no-event'>Nessun evento in programma<h1 />";
             }
             ?>
         </div>

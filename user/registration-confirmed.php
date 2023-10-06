@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Edusogno-Registrazione avvenuta</title>
+    <link rel="icon" type="image/png" href="../images/edusogno-favicon.png">
+
     <!-- link css -->
     <link rel="stylesheet" href="../css/login-style.css">
 
@@ -27,7 +29,7 @@
 </html>
 
 <style>
-h2 {
-    text-align: center;
-}
+    h2 {
+        text-align: center;
+    }
 </style>

@@ -89,6 +89,11 @@ h4{
     margin-bottom: 20px;
 }
 
+.no-event {
+    width: 100vw;
+    text-align: center;
+}
+
 .btn {
     text-align: center;
     border: none;
@@ -96,7 +101,7 @@ h4{
     padding: 10px;
     color: white;
     border-radius: 15px;
-    font-size: 25px;
+    font-size: 20px;
     margin-top: 20px;
     cursor: pointer;
 }

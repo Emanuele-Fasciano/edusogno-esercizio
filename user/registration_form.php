@@ -16,7 +16,8 @@ if (isset($_SESSION['email_error'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Edusogno-Registrazione</title>
+    <link rel="icon" type="image/png" href="../images/edusogno-favicon.png">
     <!-- link css -->
     <link rel="stylesheet" href="../css/form-style.css">
 

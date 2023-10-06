@@ -13,7 +13,7 @@ if ($conn->connect_error) {
     die("Connessione al database fallita: " . $conn->connect_error);
 }
 
-// Ricevo e salvo i  dati dal modulo
+// Ricevo e salvo i  dati dal form 
 $name = $_POST["name"];
 $surname = $_POST["surname"];
 $email = $_POST["email"];
@@ -23,11 +23,12 @@ $password = password_hash($_POST["password"], PASSWORD_DEFAULT); // crypto la pa
 $check_email = "SELECT * FROM utenti WHERE email = '$email'";
 $result = $conn->query($check_email);
 
+// se la mail è già presente nel database
 if ($result->num_rows > 0) {
     header("Location: registration_form.php");
     $_SESSION['email_error'] = "La tua email è già stata utilizzata, inserisci una nuova email";
 } else {
-    // Inserimento dei dati nella tabella degli utenti
+    // Se la mail è nuova inserisco i dati nella tabella degli utenti
     $sql = "INSERT INTO utenti (name, surname, email, password) VALUES ('$name', '$surname', '$email', '$password')";
 
     if ($conn->query($sql) === TRUE) {

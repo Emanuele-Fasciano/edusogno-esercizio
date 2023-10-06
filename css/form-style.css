@@ -64,10 +64,10 @@ h4 {
 .btn {
     border: none;
     background-color: rgb(0, 87, 255);
-    padding: 10px;
+    padding: 15px;
     color: white;
     border-radius: 15px;
-    font-size: 25px;
+    font-size: 15px;
     margin-top: 35px;
     cursor: pointer;
 }
@@ -77,10 +77,9 @@ h4 {
     text-decoration: none;
     border: none;
     background-color: rgb(0, 87, 255);
-    padding: 10px;
+    padding: 15px;
     color: white;
     border-radius: 15px;
-    font-size: 20px;
     margin-top: 35px;
     margin-left: 20px;
     cursor: pointer;

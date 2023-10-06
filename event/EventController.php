@@ -38,7 +38,7 @@ class EventController
             $attendeesArray = array_map('trim', $attendeesArray);
 
             // formatto la data e l'orario per stamparle nella mail
-            list($onlyDate, $onlyTime) = explode(' ', $date);
+            list($onlyDate, $onlyTime) = explode('T', $date);
             $dataDateTime = new DateTime($onlyDate);
             $timeDateTime = new DateTime($onlyTime);
             $formattedDate = $dataDateTime->format("d/m/Y");
@@ -108,6 +108,7 @@ class EventController
     // funzione per l'update di un evento
     public function updateEvent($title, $attendees, $description, $date, $id)
     {
+        // preparo la query per poi andare a bindare "?" con i dati del form
         $sql = "UPDATE eventi SET nome_evento = ?, attendees = ?, description = ?, data_evento = ? WHERE id = ?";
         $stmt = $this->database->prepare($sql);
 
@@ -126,7 +127,7 @@ class EventController
             $attendeesArray = array_map('trim', $attendeesArray);
 
             // formatto la data e l'orario per stamparle nella mail
-            list($onlyDate, $onlyTime) = explode(' ', $date);
+            list($onlyDate, $onlyTime) = explode('T', $date);
             $dataDateTime = new DateTime($onlyDate);
             $timeDateTime = new DateTime($onlyTime);
             $formattedDate = $dataDateTime->format("d/m/Y");

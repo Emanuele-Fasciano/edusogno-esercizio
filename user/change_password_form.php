@@ -55,7 +55,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Edusogno-Cambio password</title>
+    <link rel="icon" type="image/png" href="../images/edusogno-favicon.png">
+
     <!-- link css -->
     <link rel="stylesheet" href="../css/form-style.css">
 
@@ -71,7 +73,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <img src="../images/logo.svg" alt="">
         </div>
     </header>
-    <div class="action-btn"><a href="dashboard.php">Indietro</a></div>
+    <div class="back-btn"><a href="dashboard.php">Indietro</a></div>
     <h1>Cambia Password</h1>
     <h4><?= $error_message ?></h4>
     <div class="form-container">
@@ -88,26 +90,3 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </body>
 
 </html>
-
-<style>
-h2 {
-    color: green;
-    text-align: center;
-}
-
-.action-btn {
-    margin-top: 45px;
-}
-
-.action-btn a {
-    text-align: center;
-    background-color: rgb(0, 87, 255);
-    padding: 15px;
-    color: white;
-    border-radius: 15px;
-    font-size: 15px;
-    cursor: pointer;
-    text-decoration: none;
-    margin-left: 20px;
-}
-</style>

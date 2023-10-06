@@ -11,8 +11,10 @@ if ($conn->connect_error) {
     die("Connessione al database fallita: " . $conn->connect_error);
 }
 
+// recupero l'id dell' evento
 $idEvent = $_GET['idEvent'];
 
+// recupero i dati dell' evento per stamparli nel form come "value" all'apertura della pagina
 $sql = "SELECT attendees, nome_evento, data_evento, description  FROM eventi WHERE id = $idEvent";
 $result = $conn->query($sql);
 $row = $result->fetch_assoc();
@@ -30,7 +32,8 @@ $description = $row["description"];
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Edusogno-Aggiorna evento</title>
+    <link rel="icon" type="image/png" href="../images/edusogno-favicon.png">
     <!-- link css -->
     <link rel="stylesheet" href="../css/form-style.css">
 
